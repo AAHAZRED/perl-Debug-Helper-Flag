@@ -143,9 +143,9 @@ never try to load it at runtime, otherwise the optimization will not work!
 If you try to import C<DEBUG_FLAG> while it is not yet defined, the warning
 "Attempt to export while constant is not yet defined" is printed. If you want
 a fatal error instead, set the environment variable
-C<PERL_DEBUG_HELPER_FLAG_STRICT> to an I<true> value. This is a warning by
-default to avoid problems when using L<Perl::LanguageServer> with e.g. the
-corresponding vs code plugin.
+C<PERL_DEBUG_HELPER_FLAG_STRICT> (or C<$Debug::Helper::Flag::strict>) to a
+I<true> value. This is a warning by default to avoid problems when using
+L<Perl::LanguageServer> with e.g. the corresponding vs code plugin.
 
 
 =head1 SEE ALSO
